@@ -27,7 +27,7 @@ public class CreateNewProfileTest extends BaseTest {
 
     By agreeCheckbox = By.xpath("//label[@for='input-agree']");
     By continueRegistrationButton= By.xpath("//input[@type='submit' and @value='Continue']");
-    By logout = By.xpath("//div[@id='widget-navbar-217834']//span[contains(text(),'Logout')]");
+
 
 
 
@@ -48,9 +48,7 @@ public class CreateNewProfileTest extends BaseTest {
         click(agreeCheckbox);
         click(continueRegistrationButton);
 
-        Actions  act = new Actions(driver);
-        act.moveToElement(find(myAccountMenu)).perform();
-        click(logout);
+
 
     }
 
